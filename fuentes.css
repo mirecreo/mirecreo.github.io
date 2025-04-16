@@ -1,0 +1,32 @@
+h1 {
+font-family: Unicorn;
+font-size: 70px;
+}
+
+h2 {
+font-family: Unicorn;
+font-size: 50px;
+}
+
+h3 {
+font-family: Cursiva;
+font-size: 40px;
+}
+
+p {
+font-family: Calibri;
+font-size: 20px;
+}
+
+@font-face {
+font-family: Unicorn;
+src: url('./fonts/unicorn.otf');
+}
+@font-face {
+font-family: Calibri;
+src: url('./fonts/calibri.ttf');
+}
+@font-face {
+font-family: Cursiva;
+src: url('./fonts/cursiva.otf');
+}

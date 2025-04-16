@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<title>Mi Recreo</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Mi Recreo" />
+<meta name="generator" content="VisualNEO Web (19.9.16)" />
+<meta name="date" content="2025-04-15 21:56" />
+<meta name="copyright" content="Copyright 2025 Ricardo Contard" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/nzAnimate.min.css">
+<link rel="stylesheet" href="css/neoapp-ui.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="fuentes.css">
+<link rel="shortcut icon" href="img/timbre.png" />
+</head>
+<body id="ng-app" ng-app="NeoApp" ng-cloak>
+<div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
+<script type="text/ng-template" id="Intro">
+<div id="Intro">
+<div id="IntroTimbre" class="[NAB.IntroTimbre_effect]" ng-style="NAB.IntroTimbre_style" ng-hide="NAB.IntroTimbre_hidden" ng-disabled="NAB.IntroTimbre_disabled"><div align="center"><br><br><br><a href="#!Portada"><img src="img/timbre.png" height="110"></a><hr><p>Toca el timbre para comenzar...</p></div>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="Portada">
+<div id="Portada">
+<div id="Pie" class="[NAB.Pie_effect]" ng-style="NAB.Pie_style" ng-hide="NAB.Pie_hidden" ng-disabled="NAB.Pie_disabled"><div align="center"><p>© 2025 . <a href="https://iosoft2022.github.io" target="_blank">IoSoft Producciones</a></p></div>
+</div>
+<div id="cont_portada" class="[NAB.cont_portada_effect]" ng-style="NAB.cont_portada_style" ng-hide="NAB.cont_portada_hidden" ng-disabled="NAB.cont_portada_disabled"><div align="center"><h1>Mi Recreo</h1><br><h3>de cuentos y canciones</h3><hr><img src="img/img1.png" height="400px"><br></div>
+<div id="cont_menu" class="neo-top-center [NAB.cont_menu_effect]" ng-style="NAB.cont_menu_style" ng-hide="NAB.cont_menu_hidden" ng-disabled="NAB.cont_menu_disabled"><div align="center">
+<a href="#!Leer"><img src="img/BTN_LEER.png" height="163"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#!Autor"><img src="img/BTN_AUTOR.png" height="163"></a>
+<div>
+</div>
+</div>
+<div id="Player1" class="[NAB.Player1_effect]" ng-style="NAB.Player1_style" ng-hide="NAB.Player1_hidden" ng-disabled="NAB.Player1_disabled"><audio autoplay="true" controls="controls"><source src="archivos/audio1.mp3" type="audio/mpeg"/>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="Leer">
+<div id="Leer">
+<div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="60"></a><br></div>
+<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">M&nbsp;e n ú</h3>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="Autor">
+<div id="Autor">
+<div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="60"></a><br></div>
+<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">M&nbsp;e n ú</h3>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="NewDialog">
+<div id="DialogContainer1" class="modal-dialog modal-sm"><div class="modal-content" style="height:100%">
+</div></div>
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+<script src="js/angular-route.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/neoapp.min.js"></script>
+<script src="js/neoapp-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
