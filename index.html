@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Mi Recreo" />
 <meta name="generator" content="VisualNEO Web (19.9.16)" />
-<meta name="date" content="2025-04-15 21:56" />
+<meta name="date" content="2025-04-17 01:40" />
 <meta name="copyright" content="Copyright 2025 Ricardo Contard" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -17,7 +17,6 @@
 <link rel="stylesheet" href="css/neoapp-ui.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="fuentes.css">
-<link rel="shortcut icon" href="img/timbre.png" />
 </head>
 <body id="ng-app" ng-app="NeoApp" ng-cloak>
 <div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
@@ -29,20 +28,23 @@
 </script>
 <script type="text/ng-template" id="Portada">
 <div id="Portada">
+<div id="Player1" class="[NAB.Player1_effect]" ng-style="NAB.Player1_style" ng-hide="NAB.Player1_hidden" ng-disabled="NAB.Player1_disabled"><audio autoplay="true" controls="controls"><source src="archivos/audio1.mp3" type="audio/mpeg"/>
+</div>
 <div id="Pie" class="[NAB.Pie_effect]" ng-style="NAB.Pie_style" ng-hide="NAB.Pie_hidden" ng-disabled="NAB.Pie_disabled"><div align="center"><p>© 2025 . <a href="https://iosoft2022.github.io" target="_blank">IoSoft Producciones</a></p></div>
 </div>
-<div id="cont_portada" class="[NAB.cont_portada_effect]" ng-style="NAB.cont_portada_style" ng-hide="NAB.cont_portada_hidden" ng-disabled="NAB.cont_portada_disabled"><div align="center"><h1>Mi Recreo</h1><br><h3>de cuentos y canciones</h3><hr><img src="img/img1.png" height="400px"><br></div>
-<div id="cont_menu" class="neo-top-center [NAB.cont_menu_effect]" ng-style="NAB.cont_menu_style" ng-hide="NAB.cont_menu_hidden" ng-disabled="NAB.cont_menu_disabled"><div align="center">
-<a href="#!Leer"><img src="img/BTN_LEER.png" height="163"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#!Autor"><img src="img/BTN_AUTOR.png" height="163"></a>
-<div>
+<div id="cont_portada" class="[NAB.cont_portada_effect]" ng-style="NAB.cont_portada_style" ng-hide="NAB.cont_portada_hidden" ng-disabled="NAB.cont_portada_disabled"><div align="center"><h1>Mi Recreo</h1><br><h3>de cuentos y canciones</h3><hr><img src="img/img1.png" height="350px"><br><hr>
+<a href="#!Leer"><img src="img/BTN_LEER.png" height="140"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#!Autor"><img src="img/BTN_AUTOR.png" height="140"></a><br>
+<a href="#!Introduccion"><img src="img/BTN_INTRODUCCION.png" height="90"></a><br>
+<br><hr>
+
+
 </div>
-</div>
-<div id="Player1" class="[NAB.Player1_effect]" ng-style="NAB.Player1_style" ng-hide="NAB.Player1_hidden" ng-disabled="NAB.Player1_disabled"><audio autoplay="true" controls="controls"><source src="archivos/audio1.mp3" type="audio/mpeg"/>
 </div>
 </div>
 </script>
 <script type="text/ng-template" id="Leer">
 <div id="Leer">
+<iframe id="IFrameLeer" name="IFrameLeer" width="768px" height="1033px" frameborder="0" class="[NAB.IFrameLeer_effect]" ng-style="NAB.IFrameLeer_style" ng-hide="NAB.IFrameLeer_hidden" ng-disabled="NAB.IFrameLeer_disabled" ng-src="leer/leer.html"></iframe>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="60"></a><br></div>
 <h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">M&nbsp;e n ú</h3>
 </div>
@@ -50,6 +52,53 @@
 </script>
 <script type="text/ng-template" id="Autor">
 <div id="Autor">
+<div id="Cont_Autor" class="[NAB.Cont_Autor_effect]" ng-style="NAB.Cont_Autor_style" ng-hide="NAB.Cont_Autor_hidden" ng-disabled="NAB.Cont_Autor_disabled"><img src="img/autor.jpg" height="150">
+<hr>
+<p>
+<strong>Nombre: </strong>Ricardo Martín Contard<br><br>
+<strong>Hábitat: </strong> Bibliotecas<br><br>
+<strong>Residencia actual: </strong> Concepción del Uruguay (Entre Ríos)<br><br>
+<strong>Experiencia: </strong>Músico desde 1992. Hijo desde 1980. Hermano desde 1984. Padre desde 2007. Esposo desde 2009. Técnico bibliotecario desde 2001. Amigo de quienes gusten de estas obras, desde hoy en adelante...<br><br>
+<strong>Obras publicadas: </strong> Antología de cuentos "<i>El hombre cabeza de caballo</i>" (2018)<br><br>
+<strong>Discos: </strong>30<br><br>
+<strong>Premios: </strong>3 veces ganador del 1º Premio del "Concurso Provincial de Poesía y Cuento Corto" (Colonia Elía)<br><br>
+<strong>Aspiraciones: </strong>Ser el 4 veces ganador del "Concurso Provincial de Poesía y Cuento Corto" (Colonia Elía)<br><br>
+<strong>Redes: </strong><br>
+&nbsp;&nbsp;&nbsp;<img src="img/btnFACEBOOK.png" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/ricardo.contard" target="_blank"><strong>Facebook</strong></a><br><br>
+&nbsp;&nbsp;&nbsp;<img src="img/btnINSTAGRAM.png" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/ricardocontard.ok?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><strong>Instagram</strong></a><br><br>
+&nbsp;&nbsp;&nbsp;<img src="img/btnWEB.png" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://ricardocontard.com.ar" target="_blank"><strong>Sitio Web</strong></a><br><br>
+<a href="mailto:ricardocontard@gmail.com" class="text-primary">ricardocontard@gmail.com</a>&nbsp;&nbsp;&nbsp;//&nbsp;&nbsp;&nbsp;<a href="https://api.whatsapp.com/send?phone=543442505214" target="_blank">WhatsApp</a>
+</p>
+<hr>
+<div align="center">
+<h3>Si querés recibir la visita del autor en tu escuela, y juntos disfrutar un <strong>recreo</strong> diferente, completá este <strong><a href="https://forms.gle/BGCDUHiaaGAhtZJ4A" target="_blank">FORMULARIO</a></strong></h3>
+</div>
+</div>
+<div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="60"></a><br></div>
+<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">M&nbsp;e n ú</h3>
+</div>
+</div>
+</script>
+<script type="text/ng-template" id="Introduccion">
+<div id="Introduccion">
+<div id="Cont_Intro" class="[NAB.Cont_Intro_effect]" ng-style="NAB.Cont_Intro_style" ng-hide="NAB.Cont_Intro_hidden" ng-disabled="NAB.Cont_Intro_disabled"><div align="center">
+<img src="img/img1.png" height="150"><br><h2>INTRODUCCION</h2>
+<p>
+Este libro fue creado para presentarse y compartirse en escuelas primarias de todo el país.<br>
+Una colección de cuentos y canciones que no pretende ser más que un “recreo” de la rutinaria escena escolar.<br>
+Recreo mediante el cual nos zambulliremos a explorar el mundo de las palabras y los libros.<br>
+El destino pensado para estos textos es que no queden guardados<br>
+entre estas páginas sino que mediante las artes del autor (y el oportuno aporte de las autoridades competentes…)<br>
+puedan llegar a las escuelas, los salones de actos, las bibliotecas, y todo ambiente donde podamos encontrar
+<br>ávidos oyentes y corazones abiertos a la aventura de comunicarse e interactuar sanamente y re-crear las imaginaciones.<br><br>
+"Cuentos y canciones para re-crear lo ya creado",<br>aprendiendo las canciones, interactuando, y coloreando las ilustraciones.
+<br></p><hr>
+<h3>***<br>Desde aquí puedes descargar un PDF imprimible con las ilustraciones del libro, listas para colorear.<br>
+(clic en la siguiente imagen)<br><a href="https://drive.google.com/file/d/12f8QmqvyHWx5_jO8QelwrYt3gDKiCr6t/view?usp=sharing" target="_blank"><img src="img/colorear.png" height="115"></a>
+<br>***<br>Además, junto a los textos, encontrarás un reproductor para escuchar cada canción o cuento:<br><img src="img/reproductor.png" height="60">
+</h3>
+</div>
+</div>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="60"></a><br></div>
 <h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">M&nbsp;e n ú</h3>
 </div>
