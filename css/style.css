@@ -6,16 +6,23 @@ html{background:#eeeeee}body{background:rgba(255,255,255,0);position:absolute;to
 #TituloMenu {position:absolute;left:0.05%;width:99.9%;top:9px;height:52px;margin:0;color:#FFFFFF;text-align:left;padding-left:130px}
 #Intro {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF}
 #IntroTimbre {position:absolute;left:0px;width:100%;top:169px;height:335px;margin:0;border-width:1px;padding-top:50px;overflow-x:hidden;overflow-y:hidden}
-#Portada {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC}
+#Portada {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC;overflow-y:auto}
+#Player1 {position:absolute;left:19.140625%;width:62.109375%;top:1156px;height:31px;margin:0;border-width:1px;border-style:solid;background-color:#fff;;overflow-x:hidden;overflow-y:hidden}
 #Pie {position:absolute;left:0;bottom:0;width:100%;height:29px;margin:10px 0 0 0;background-color:#E0E0E0;padding-top:5px;overflow-x:hidden;overflow-y:hidden}
-#cont_portada {position:absolute;left:1.953125%;width:96.2239583333333%;top:43px;height:976px;margin:0;font-size:12pt;border-width:1px;overflow-x:hidden;overflow-y:hidden}
-#cont_menu {position:absolute;left:0;bottom:0;width:100%;height:320px;text-align:center;border-width:1px;overflow-x:hidden;overflow-y:hidden}
-#Player1 {position:absolute;left:19.2708333333333%;width:62.109375%;top:1034px;height:71px;margin:0;border-width:1px;border-style:solid;background-color:#fff;;overflow-x:hidden;overflow-y:hidden}
-#Leer {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC}
-#Autor {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC}
+#cont_portada {position:absolute;left:1.82291666666667%;width:96.3541666666667%;top:41px;height:1068px;margin:0;font-size:12pt;border-width:1px;overflow-x:hidden;overflow-y:hidden}
+#Leer {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF;overflow-y:auto}
+#IFrameLeer {position:absolute;left:0px;width:100%;top:90px;height:1033px;margin:0;}
+#Autor {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC;overflow-y:auto}
+#Cont_Autor {position:absolute;left:0px;width:100%;top:88px;height:1068px;margin:0;border-width:1px;padding-left:40px;padding-right:40px;padding-top:25px;overflow-y:scroll;overflow-x:hidden}
+#Introduccion {position:relative;width:100%;height:100%;overflow:auto;;background-color:#FFF8DC;overflow-y:auto}
+#Cont_Intro {position:absolute;left:0px;width:100%;top:79px;height:1078px;margin:0;border-width:1px;padding-left:10px;padding-right:10px;padding-top:5px;overflow-y:scroll;overflow-x:hidden}
 #DialogContainer1 {margin-left:auto;margin-right:auto;width:100%;height:1024px;}
 #cont_menu {width: 100%;}
 #MenuSup {width: 100%;position: fixed;}
 #TituloMenu {width: 100%;}
 #IntroTimbre {width: 100%;}
 #Pie {width: 100%;}
+#iFrameLeer {width: 100%;height: 100%;}
+#Cont_BTN_INTRO {width: 100%;}
+#Cont_Intro {width: 100%;}
+#Cont_Autor {width: 100%;}
