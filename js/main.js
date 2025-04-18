@@ -6,10 +6,7 @@ $App.NAB={PageList:["Intro","Portada","Leer","Autor","Introduccion"],PageEnterEf
 $scope.NeoApp_StartUp = function() {$scope.TopCenterApp();};
 $scope.TituloMenu_click = function() {$scope.GotoPage( "Portada" );};
 $scope.Intro_pageenter = function() {$scope.TopCenterApp();
-window.scrollTo(0,0);
-$timeout(function() {
-$scope.CreateAudioPlayer("Container1","media/audio1.mp3",true,false,false);
-},1500);};
+window.scrollTo(0,0);};
 $scope.Portada_pageenter = function() {window.scrollTo(0,0);};
 $scope.Leer_pageenter = function() {window.scrollTo(0,0);
 $scope.CreateAudioPlayer("p1","https://www.googleapis.com/drive/v3/files/12agXo1-RPqcyG4j_wwL-ENjA2NOC8dRC?alt=media&key=AIzaSyDzwE3vL4zEa1C3yxKwMycHsB4W-lzFdDM",false,false,false);};
