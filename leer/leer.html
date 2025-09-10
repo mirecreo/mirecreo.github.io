@@ -1,58 +1,123 @@
 <!DOCTYPE html>
-<html  >
+<html lang="es">
 <head>
-  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.24, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="">
-  
-  
-  <title>Leer</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link href="assets/fonts/style.css" rel="stylesheet">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=PZAjID"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=PZAjID" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca Interactiva</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+.player {width:300px;}
+/* Importar fuentes locales */
+@font-face {
+  font-family: 'Unicorn School';
+  src: url('fonts/UnicornSchool.ttf') format('truetype');
+}
 
+@font-face {
+  font-family: 'DK The Cats Whiskers';
+  src: url('fonts/DKTheCatsWhiskers.ttf') format('truetype');
+}
+
+/* Aplicar fuentes */
+h1.section-title {
+  font-family: 'Unicorn School', cursive;
+}
+
+h2, nav a {
+  font-family: 'DK The Cats Whiskers', cursive;
+}
+
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: 'Poppins', sans-serif; line-height:1.6; background:#fdf6f0; color:#333; scroll-behavior: smooth; }
   
+/* Menú superior alineado a la derecha, horizontal */
+header {
+  position: fixed;
+  top:0; left:0; width:100%;
+  background:#A93226; color:#fff;
+  z-index:1000;
+  display:flex; justify-content: flex-end; align-items:center;
+  padding:10px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+nav {
+  display: flex;
+  gap:20px; /* Espacio entre items */
+}
+nav a {
+  color:#fff; text-decoration:none;
+  font-weight:500; display: flex; align-items: center; gap:5px;
+  transition: color 0.3s;
+  font-family: 'DK The Cats Whiskers', cursive; /* Fuente del menú */
+}
+nav a:hover, nav a.active { color:#FFD700; }
+
+/* Contenedor principal */
+.container { padding-top:70px; max-width:900px; margin:0 auto; }
+
+  /* Títulos intermedios h1 */
+  h1.section-title {
+    font-size:3.2em;
+    color:#0F172B; /* color infantil y alegre */
+    text-align:center;
+    margin:40px 0 20px 0;
+    font-weight:550;
+    letter-spacing:1px;
+  }
+
+  /* Secciones de texto */
+  section.text-block {
+    background:#fff; margin:20px 0; padding:20px;
+    border-radius:15px; box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    border: 2px solid transparent;
+  }
+
+  section.text-block h2 { color:#A93226; margin-bottom:10px; font-size:1.8em;}
+  section.text-block p { margin-bottom:15px; font-size:1.2em; }
+  section.text-block img {
+    max-width:100%; border-radius:10px; cursor:pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  section.text-block img:hover { transform: scale(1.05); box-shadow:0 8px 20px rgba(0,0,0,0.3); }
+
+  /* Audio con efecto al reproducir */
+  audio { width:100%; margin-bottom:15px; outline:none; }
+
+  /* Responsive */
+  @media (max-width:500px) {
+    header { flex-direction: column; align-items:flex-start; }
+    nav a { margin:8px 0; }
+    h1.section-title { font-size:1.8em; }
+  }
   
-  
+
+</style>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="article11 cid-uIuRVYshSA" id="article11-r">
-    
 
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2">
-                <strong>Palabras y libros</strong></h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Menú superior -->
+<header>
+  <nav>
+    <a href="#palabras">📚 Palabras y libros</a>
+    <a href="#dinosaurios">🦖 Dinosaurios y otros animales</a>
+    <a href="#misterios">🕵️‍♂️ Misterios</a>
+    <a href="#yapa">🎁 Yapa</a>
+  </nav>
+</header>
 
-<section data-bs-version="5.1" class="article12 cid-uIuM9z1aIv" id="article12-6">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5">
-                <strong>¡Me subo y voy!</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Mesuboyvoy.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Hay libros que se parecen
+<!-- Contenedor principal -->
+<div class="container">
+<div id="palabras"><br></div>
+  <!-- Título intermedio -->
+  <h1 class="section-title">Palabras y libros</h1><br>
+  <section class="text-block" >
+    <h2>¡Me subo y voy!</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Mesuboyvoy.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+	<p><br>Hay libros que se parecen
 <br>a los cohetes espaciales,
 <br>te llevan a dar un paseo
 <br>y te ayudan a despegarte;
@@ -80,23 +145,18 @@
 <br>Voy a colgarme de algún cometa cruzando el cielo.
 <br>Y si me ves, sacame foto o pedí un deseo;
 <br>si te animás a despegar, canta conmigo esta canción…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuMY6a7qb" id="article12-7">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5">
-                <strong>¿Qué tendrán los libros?</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Quétendránloslibros.mp3" type="audio/mpeg" /> </audio>
-</audio>
-</div>                
-<p class="mbr-text mbr-fonts-style display-7"><br><br>¿Quién tendrá ese librito,
+  </section>
+
+<section class="text-block" >
+    <h2>¿Qué tendrán los libros?</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Quétendránloslibros.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+	<br><br>¿Quién tendrá ese librito,
 <br>que leí cuando era chico?
 <br>Tenía magia, tenía hechizo,
 <br>y personajes de todo tipo…
@@ -115,22 +175,19 @@
 <br>¿Alguien vio la clave, dónde está escrita…?
 <br>¿cómo es este asunto?
 <br>Díganme dónde lo guardan, 
-<br>dónde lo tiene escondidoooooo…<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>dónde lo tiene escondidoooooo…<br>
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuMYIrWYL" id="article12-8">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Magia</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br><strong>¡Magia, magia, magia!
+  </section>
+  
+  <section class="text-block" >
+    <h2>Magia</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+	<br><strong>¡Magia, magia, magia!
 <br>Los cuentos tienen magia.
 <br>Cuando abrís un libro,
 <br>¿quién sabe lo que va a pasar…?
@@ -152,30 +209,26 @@
 <br>Rapunzel cortó su pelo y vio que algo cambió;
 <br>al salir de aquella torre se pudo liberar.
 <br>Harry Potter fue creciendo y su magia mejoró,
-<br>por los libros que supo aprovechar…<br></p>
-            </div>
-        </div>
-    </div>
+<br>por los libros que supo aprovechar…<br>
+	</p>
 <br>
-<div align="center"><img src="assets/images/il1.png" style="max-width:500px;max-height:500px"></div>
+<div align="center"><img src="ils/il1.png" style="max-width:500px;max-height:500px"></div>
 <br>
-</section>
-
-<section data-bs-version="5.1" class="article12 cid-uIuMYPVAcU" id="article12-9">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>La aventura espacial</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Laaventuraespacial.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Nos vamos a explorar el Sistema Solar;
+  </section>
+  
+  <section class="text-block" >
+    <h2>La aventura espacial</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Laaventuraespacial.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+	<br>Nos vamos a explorar el Sistema Solar;
 <br>muchos desafíos nos esperan allá,
 <br>y si en una estrella te quieres quedar
 <br>cantemos todos juntos: la aventura espacial…
 <br>
-<br><strong>¡Zum, zum, zum…!<br>¡La aventura espacial!
+<br><strong>¡Zum, zum, zum…!<sup>(1)</sup><br>¡La aventura espacial!
 </strong><br>
 <br>Empecemos con Mercurio, Venus y Marte;
 <br>Júpiter, Saturno, Urano y Neptuno;
@@ -185,25 +238,21 @@
 <br><strong>¡Zum, zum, zum…!
 <br>¡La aventura espacial!
 </strong><br>
-<br><br></p>
-            </div>
-        </div>
-    </div>
+<br><br><font size="3"><sup>(1)</sup> zum: onomatopeya que simula ser un transbordador cruzando frente a nosotros</font>
+	</p>
 <br>
-<div align="center"><img src="assets/images/il2.png" style="max-width:500px;max-height:500px"></div>
+<div align="center"><img src="ils/il2.png" style="max-width:500px;max-height:500px"></div>
 <br>
-</section>
-
-<section data-bs-version="5.1" class="article12 cid-uIuMYW2Xjp" id="article12-a">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>A-Copla</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>(ó teoría de la retroalimentación)
+  </section>
+  
+  <section class="text-block" >
+    <h2>A-Copla</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br>(ó teoría de la retroalimentación)
 <br>
 <br>
 <br>Cuando colocamos un micrófono frente a un parlante o altavoz se produce un agudo sonido (similar a un chillido ensordecedor) al cual llamamos retroalimentación, o simplemente “acople”. La explicación es la siguiente: el sonido viaja en ondas a través del aire, es captado por el micrófono, pasa por el cable en forma de pulso electromagnético, luego llega al aparato amplificador (parlante) para salir nuevamente convertido en ondas sonoras; pero al ser atrapado nuevamente por el mismo micrófono se inicia una cadena sinfín que repite el proceso de manera muy rápida, entonces para nuestros oídos lo único audible es el chillido que produce esa velocidad.
@@ -219,23 +268,19 @@
 <br>que me dijera a mí,
 <br>que te dijera a vos
 <br>que no te preocupes
-<br>y que estés bien…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>y que estés bien…&nbsp;<br>	
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuMZ09nvA" id="article12-b">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5">
-                <strong>Matílde Wílde</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/MatíldeWílde.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Matílde Wílde empezó a escribir a los 7 años, y desde entonces no paró nunca. Escribía constantemente. Escribía en papel, en cartón, en pisos, en paredes, en techos, en el aire, en su mente…
+  </section>
+  
+  <section class="text-block" >
+    <h2>Matílde Wílde</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/MatíldeWílde.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Matílde Wílde empezó a escribir a los 7 años, y desde entonces no paró nunca. Escribía constantemente. Escribía en papel, en cartón, en pisos, en paredes, en techos, en el aire, en su mente…
 <br>Escribía torcido con renglones y derechito sin renglones. Escribía a toda hora y en todo lugar.
 <br>En su afán de escribir había desarrollado una exactitud impresionante, pero tenía una falla: en cada palabra que contenía la letra “i”, desarrolló la manía de colocarle tilde encima en vez de punto.
 <br>Debido a esto, su madre, preocupada, la llevó a un doctor en letras. El letrado la examinó, estudió su técnica y la diagnosticó con exceso de acentuación (patología desconocida hasta entonces).
@@ -246,30 +291,26 @@
 <br>A las del primer grupo debía llamarlas <strong>AGUDAS</strong>, y son por ejemplo: canción, razón, estrés, llegaré.
 <br>A las del segundo grupo debía llamarlas <strong>GRAVES</strong>, y son por ejemplo: Héctor, distraído, fácil, fértil.
 <br>A las del tercer grupo no establecieron cómo llamarles, así que ella les puso el coqueto nombre de <strong>ESDRÚJULAS</strong>, con ánimo de complicar un poquitín más el léxico. Ejemplo de este tipo son: trémolo, almácigo, tímido, química.
-<br>Después de dominar estos grupos de palabras, le explicaron que para cada uno hay excepciones en cuanto a usar tildes, pero eso será tema para otro capítulo…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
+<br>Después de dominar estos grupos de palabras, le explicaron que para cada uno hay excepciones en cuanto a usar tildes, pero eso será tema para otro capítulo…&nbsp;<br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il3.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il3.png" style="max-width:500px"></div>
 <br>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuMZ3MgeM" id="article12-c">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Si tenés un diccionario</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Sitenésundiccionario.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Si tenés un diccionario, tenelo a mano.
+<section class="text-block" >
+    <h2>Si tenés un diccionario</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Sitenésundiccionario.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Si tenés un diccionario, tenelo a mano.
 <br>No lo dejes tirado, nunca olvidado.
 <br>Abierto y vivo, nunca cerrado.
 <br>Tené presente, como dice Gabo;
 <br>“aunque no las sabe todas,
-<br>nunca está equivocado”. (2)
+<br>nunca está equivocado”.<sup>(2)</sup>
 <br>
 <br>Si lo abrís vas a ver
 <br>que está lleno de vocablos,
@@ -285,36 +326,22 @@
 <br>Por cómo escribimos, por cómo hablamos.
 <br>Con más prosodia al comunicarnos,
 <br>No habrá patología, estaremos curados.
-<br>&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>   
+<br>&nbsp;<br><br><br>	
+<font size="3"><sup>(2)</sup>Lo dice Gabriel García Márquez, en el prólogo de un diccionario.</font>
+</p>
 
-    
-<section data-bs-version="5.1" class="article11 cid-uIuSdSErkW" id="article11-s">    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Dinosaurios y otros animales</strong></h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section data-bs-version="5.1" class="article12 cid-uIuMZ73g8z" id="article12-d">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Dinosaurios por todas partes</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Dinosauriosportodaspartes.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Hace muchos años vivía un dinosaurio
+  </section>
+  
+<div id="dinosaurios"><br></div>  
+  <h1 class="section-title">Dinosaurios y otros animales</h1><br>
+  <section class="text-block" >
+    <h2>Dinosaurios por todas partes</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Dinosauriosportodaspartes.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Hace muchos años vivía un dinosaurio
 <br>con las patas cortas y el cuello muy largo,
 <br>era el más pesado de todos,
 <br>herbívoro y tierno el brontosaurio…
@@ -343,23 +370,19 @@
 <br>muy temible el tiranosaurio…
 <br>
 <br><strong>En los libros de historia y en los diccionarios;
-<br>en las revistas y los diarios, dinosaurios por todos lados.</strong><br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>en las revistas y los diarios, dinosaurios por todos lados.</strong><br>	
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuMZalIO1" id="article12-e">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5">
-                <strong>Mi mascota es un dinosaurio</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Mimascotaesundinosaurio.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Yo tengo una mascota que vive masticando,
+  </section>
+  
+  <section class="text-block" >
+    <h2>Mi mascota es un dinosaurio</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Mimascotaesundinosaurio.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Yo tengo una mascota que vive masticando,
 <br>y con su cola larga rompe todo a su paso.
 <br>Todos los vecinos lo miran asustados,
 <br>son las consecuencias de tener un <strong>dinosaurio</strong>…
@@ -383,25 +406,21 @@
 <br>Les dije lo que pude, pero su nombre aún no.
 <br>No se llama “Pepito” porque come poquito;
 <br>¡se llama “Pepón” <strong>porque come un montón</strong>!
-<br>&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
+<br>&nbsp;<br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il4.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il4.png" style="max-width:500px"></div>
 <br>
-</section>
-
-<section data-bs-version="5.1" class="article12 cid-uIuMZdAEls" id="article12-f">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>El perro de mi tía</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Elperrodemitía.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>El perro de mi tía tiene una terrible tos;
+  </section>
+  
+  <section class="text-block" >
+    <h2>El perro de mi tía</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Elperrodemitía.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>El perro de mi tía tiene una terrible tos;
 <br>se lo cura con una caricia o dos…
 <br><br>El gato de mi abuela un día se le enfermó;
 <br>porque el perro de mi tía lo mordió…
@@ -417,26 +436,21 @@
 <br>
 <br>Entre muertes y desgracias se termina esta canción;
 <br>y hasta me parece que me muero yo…
-<br>&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
+<br>&nbsp;<br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il5.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il5.png" style="max-width:500px"></div>
 <br>
-</section>
-
-<section data-bs-version="5.1" class="article12 cid-uIuMZgnG4z" id="article12-g">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5">
-                <strong>Músicos en fuga</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Músicosenfuga.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Vine de la biblioteca con un libro prestado;
+  </section>
+  
+  <section class="text-block" >
+    <h2>Músicos en fuga</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Músicosenfuga.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Vine de la biblioteca con un libro prestado;
 <br>"Los músicos de Bremen" se llamaba.
 <br>Un día me lo olvidé abierto sobre la mesa,
 <br>y el más grande de los personajes se escapó...
@@ -474,41 +488,25 @@
 <br><strong>Y ahora tengo un gallo re loco
 <br>cacareando por toda la casa.
 <br>Es un gallo misterioso
-<br>que se esconde donde menos pensás...</strong><br></p>
-            </div>
-        </div>
-    </div>
+<br>que se esconde donde menos pensás...</strong><br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il6.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il6.png" style="max-width:500px"></div>
 <br>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="article11 cid-uIuSzSNnQw" id="article11-t">
-    
 
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Misterios</strong></h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
+<div id="misterios"><br></div>
+  <h1 class="section-title">Misterios</h1><br>
 
-<section data-bs-version="5.1" class="article12 cid-uIuPIYnZ7c" id="article12-h">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Preguntas</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Preguntas.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br><strong>Si lo quieres descubrir, cada pista hay que seguir,
+<section class="text-block" >
+    <h2>Preguntas</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Preguntas.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br><strong>Si lo quieres descubrir, cada pista hay que seguir,
 <br>y si no hay pistas, hay que preguntar.
 </strong><br>
 <br>¿Alguien sabe en qué biblioteca
@@ -530,22 +528,19 @@
 <br>¿Alguien sabe adónde va el dinero,
 <br>cuando por fin me compro lo quiero?
 <br>¿Alguien sabe quién va a contestar,
-<br>todo lo que no me animo a preguntar?<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>todo lo que no me animo a preguntar?<br>	
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuPJ9DIRp" id="article12-i">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>¿Qué habrá...?</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Quéhabrá.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>En el estante más distante de una biblioteca,
+  </section>
+
+<section class="text-block" >
+    <h2>¿Qué habrá...?</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Quéhabrá.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>En el estante más distante de una biblioteca,
 <br>donde nadie puede alcanzar… ¿<em>qué habrá</em>…?
 <br>Hay un libro que le falta una hoja,
 <br>y no sé cómo terminará… ¿<em>qué habrá</em>…?
@@ -568,26 +563,21 @@
 <br>desde mi cuarto no puedo escuchar, ¿<em>qué habrá</em>…?
 <br>Hay pistas flotando en el viento,
 <br>y escaleras que te llevan a cualquier lugar…
-<br>&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
+<br>&nbsp;<br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il7.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il7.png" style="max-width:500px"></div>
 <br>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuPJlf41B" id="article12-j">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>¿Dónde está el General?</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/DóndeestáelGeneral.mp3" type="audio/mpeg" /> </audio>
-</audio></div>
-               
-                <p class="mbr-text mbr-fonts-style display-7"><br>De todos los misterios que hay que revelar,
+<section class="text-block" >
+    <h2>¿Dónde está el General?<sup>(3)</sup></h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/DóndeestáelGeneral.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>De todos los misterios que hay que revelar,
 <br>seguimos una huella fantasmal.
 <br>Fuera un presidente o fuera un general,
 <br>ves su nombre en todas partes por acá…
@@ -604,25 +594,21 @@
 <br>Hasta Sarmiento lo vino a visitar.
 <br>Y si a vos te pica la curiosidad,
 <br>en los libros lo podés investigar.
-<br><br></p>
-            </div>
-        </div>
-    </div>
+<br><br><br><font size="3"><sup>(3)</sup>Referencia al General Justo José de Urquiza, en honor a quien en muchas ciudades y pueblos de la provincia de Entre Ríos se nombraron instituciones, calles, lugares, etc.</font>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il9.jpg" style="max-width:500px"></div>
+<div align="center"><img src="ils/il9.jpg" style="max-width:500px"></div>
 <br>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuPJxD5Yd" id="article12-k">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Un científico loco</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/Uncientíficoloco.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br><strong>Un científico loco, quemándose el coco,
+<section class="text-block" >
+    <h2>Un científico loco</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/Uncientíficoloco.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br><strong>Un científico loco, quemándose el coco,
 <br>buscando la fórmula de ser feliz!
 </strong><br>
 <br>Comenzando en un tiempo muy antiguo,
@@ -638,25 +624,21 @@
 <br>Hoy vinimos a esta escuela para celebrar
 <br>y recordar los misterios de las ciencias.
 <br>Cuantas más bibliotecas puedan visitar,
-<br>más expertos científicos habrá…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
+<br>más expertos científicos habrá…&nbsp;<br>	
+	</p>
 <br>
-<div align="center"><img src="assets/images/il8.png" style="max-width:500px"></div>
+<div align="center"><img src="ils/il8.png" style="max-width:500px"></div>
 <br>
-</section>
+  </section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuQxSSM42" id="article12-l">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Con la ciencia</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br><strong>Con la ciencia estudia el mundo natural,
+<section class="text-block" >
+    <h2>Con la ciencia</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br><strong>Con la ciencia estudia el mundo natural,
 <br>observando para luego experimentar.
 <br>Buscando evidencias para teorizar.
 <br>¡Es toda una ciencia, para divulgar!</strong>
@@ -673,22 +655,19 @@
 <br>ANESTESIOLOGÍA,
 <br>METROLOGÍA,
 <br>MUSEOLOGÍA,
-<br>BIBLIOTECOLOGÍA…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>BIBLIOTECOLOGÍA…&nbsp;<br>	
+	</p>
+    <img src="imagen-ejemplo.jpg" alt="Bosque encantado" onclick="alert('Imagen seleccionada');">
+  </section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuQy1Ey67" id="article12-m">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>3 teorías</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/3teorías.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>El pequeño científico quería inventar,
+<section class="text-block" >
+    <h2>3 teorías</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/3teorías.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>El pequeño científico quería inventar,
 <br>probaba y probaba y no sabía qué inventar
 <br>su amigo Alberto Einstein lo quiso guiar
 <br>y con un par de teorías lo puso a pensar…
@@ -710,38 +689,22 @@
 <br>y con un empujoncito lo hizo pensar…
 <br>es la <strong>inercia</strong>!!! para avanzar preciso inercia!!!
 <br>hay que ponerse en movimiento , aprender,
-<br>estudiar y leer mucho más…&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>estudiar y leer mucho más…&nbsp;<br>	
+	</p>
 
-<section data-bs-version="5.1" class="article11 cid-uIuSKrQ05z" id="article11-u">
-    
+  </section>  
 
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mt-0 mb-0 display-2"><strong>Yapa</strong></h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
 
-<section data-bs-version="5.1" class="article12 cid-uIuQy8PW3Z" id="article12-n">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>5 hermanos</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br><em>Hay una pequeña historia que proviene de la tradición oral de muchas de nuestras familias, y que se cuenta utilizando los 5 dedos de una mano, desde el pulgar hasta el meñique. 
+<div id="yapa"><br></div>
+  <h1 class="section-title">Yapa</h1><br>
+<section class="text-block" >
+    <h2>5 hermanos</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br><em>Hay una pequeña historia que proviene de la tradición oral de muchas de nuestras familias, y que se cuenta utilizando los 5 dedos de una mano, desde el pulgar hasta el meñique. 
 <br>Aquí propongo una reversión de la misma:
 </em><br>
 <br>
@@ -753,59 +716,51 @@
 <br>Uno de éstos se sirvió un sándwich de la heladera y se fue a su cuarto.
 <br>El otro, quiso hablar con alguien pero los demás hermanos lo ignoraron...
 <br>Tomó el libro que encontró en la mesa, lo abrió, leyó unos renglones y desapareció....
-<br>Ahora está en una cueva oscura, rodeado de joyas preciosas, sentado justo al lado de una lámpara brillante y misteriosa...&nbsp;<br><br><br><br><em>NOTA</em>: 
-<br>Para revelar el misterio, diremos que encontraron una copia del libro “Aladino y la lámpara maravillosa”.  De todos modos, este cuento se podría volver a contar mil veces y volvería a tener significado si cada vez le cambiamos el final, imaginando así que el primer hermano encontró otro libro, y no “Aladino…”.<br>&nbsp;&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>Ahora está en una cueva oscura, rodeado de joyas preciosas, sentado justo al lado de una lámpara brillante y misteriosa...&nbsp;<br><br><br><br>
+<font size="3"><strong>NOTA</strong>: 
+<br>Para revelar el misterio, diremos que encontraron una copia del libro “Aladino y la lámpara maravillosa”.  De todos modos, este cuento se podría volver a contar mil veces y volvería a tener significado si cada vez le cambiamos el final, imaginando así que el primer hermano encontró otro libro, y no “Aladino…”.<br>&nbsp;&nbsp;<br>
+</font></p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuR7OY20h" id="article12-o">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>4 ladrones y un magnate</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>El primer ladrón, el mismo que (quién sabe cómo) consiguió arrebatarle el bolso al magnate, corría por la vereda a toda prisa. Antes de llegar al semáforo, tropezó de tal manera que cayó abatido en el cemento. Cuando se dio cuenta de que alguien le había atravesado el pie, apenas pudo ver al ladrón 2 corriendo en sentido contrario con el bolso apretado contra el pecho. Al doblar en la primera esquina y caminar agitado durante 15 minutos, el segundo ladrón se detuvo exhausto en el banco de una plaza. Desafortunadamente no se percató de que lo habían estado siguiendo. Sintió un golpe seco en la nuca y se desmayó. Despertó en el suelo, rodeado de palomas y sin el bolso. Más tarde, el ladrón 3 entró a su departamento, se dio una ducha y se acostó. El bolso estaba en una silla; pero un cuarto ladrón estaba escondido debajo de la cama. A la mañana siguiente, hallaron muerto un hombre en su cama, mientras el ladrón 4 salía caminando del mismo edificio, rumbo al primer teléfono público que encontrara: “-Tengo por fin el paquete, ¿cuánto estás dispuesto a pagar por él…?-“. Mientras escuchaba una voz misteriosa dando instrucciones, ya había sido localizado por GPS; un auto se detuvo frente a la casilla, se escuchó un disparo de pistola y bajó un hombre de traje a recuperar el bolso. Era el chofer del magnate. Dos horas después, el magnate sacaba del bolso un añejo ejemplar del “Cuentos de la selva” de Horacio Quiroga y lo acomodaba en el segundo estante de la biblioteca de su oficina.
+  </section>
+  
+  <section class="text-block" >
+    <h2>4 ladrones y un magnate</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br>El primer ladrón, el mismo que (quién sabe cómo) consiguió arrebatarle el bolso al magnate, corría por la vereda a toda prisa. Antes de llegar al semáforo, tropezó de tal manera que cayó abatido en el cemento. Cuando se dio cuenta de que alguien le había atravesado el pie, apenas pudo ver al ladrón 2 corriendo en sentido contrario con el bolso apretado contra el pecho. Al doblar en la primera esquina y caminar agitado durante 15 minutos, el segundo ladrón se detuvo exhausto en el banco de una plaza. Desafortunadamente no se percató de que lo habían estado siguiendo. Sintió un golpe seco en la nuca y se desmayó. Despertó en el suelo, rodeado de palomas y sin el bolso. Más tarde, el ladrón 3 entró a su departamento, se dio una ducha y se acostó. El bolso estaba en una silla; pero un cuarto ladrón estaba escondido debajo de la cama. A la mañana siguiente, hallaron muerto un hombre en su cama, mientras el ladrón 4 salía caminando del mismo edificio, rumbo al primer teléfono público que encontrara: “-Tengo por fin el paquete, ¿cuánto estás dispuesto a pagar por él…?-“. Mientras escuchaba una voz misteriosa dando instrucciones, ya había sido localizado por GPS; un auto se detuvo frente a la casilla, se escuchó un disparo de pistola y bajó un hombre de traje a recuperar el bolso. Era el chofer del magnate. Dos horas después, el magnate sacaba del bolso un añejo ejemplar del “Cuentos de la selva” de Horacio Quiroga y lo acomodaba en el segundo estante de la biblioteca de su oficina.
 <br>
-<br>Ahora sí, todo estaba en su lugar.&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>Ahora sí, todo estaba en su lugar.&nbsp;<br>	
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuR80XiFK" id="article12-p">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Paralelo</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Tras haber realizado la suficiente cantidad de pruebas bajo un riguroso metodismo, he llegado a la conclusión de que existe un hombre exactamente igual a mí en un mundo paralelo. El mismo semblante, la misma edad, la misma expresividad en el andar y en el habla, el mismo timbre de voz, los mismos tiempos, el mismo cabello, la misma piel, increíblemente todo igual, o casi igual. A simple vista, es un misterio impresionante.
+  </section>
+  
+  <section class="text-block" >
+    <h2>Paralelo</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br>Tras haber realizado la suficiente cantidad de pruebas bajo un riguroso metodismo, he llegado a la conclusión de que existe un hombre exactamente igual a mí en un mundo paralelo. El mismo semblante, la misma edad, la misma expresividad en el andar y en el habla, el mismo timbre de voz, los mismos tiempos, el mismo cabello, la misma piel, increíblemente todo igual, o casi igual. A simple vista, es un misterio impresionante.
 <br>Sólo hay una diferencia. La obstinada lateralidad: cuando yo voy a la derecha, él va hacia la izquierda; cuando yo cierro el ojo izquierdo, él cierra el derecho; cuando yo levanto el puño derecho, él levanta el izquierdo.
 <br>Evidentemente, está resueltamente empecinado en llevarme la contra. Y lo hace perfecto, sin titubear, sincronizadamente perfecto. 
 <br>Tanto me asusta que trato de no pensarlo demasiado. Trato de evitarlo, y por ahora, no hemos compartido el mismo espacio, el mismo lado.
-<br>Lo único que me tranquiliza es que sólo nos encontramos cuando estamos frente a un espejo.&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>
+<br>Lo único que me tranquiliza es que sólo nos encontramos cuando estamos frente a un espejo.&nbsp;<br>	
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuR8djrK9" id="article12-q">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>4 pasos</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/4pasos.mp3" type="audio/mpeg" /> </audio>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Si despierto, yo sé bien que voy a ser,
+  </section>
+  
+  <section class="text-block" >
+    <h2>4 pasos</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/4pasos.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio></div>
+    <p>
+<br>Si despierto, yo sé bien que voy a ser,
 <br>yo voy a ser el que despierte junto a vos…
 <br>
 <br>Cuando salga, yo sé bien que voy a ser,
@@ -826,27 +781,23 @@
 <br>Cuando sueñe, yo sé bien que voy a ser,
 <br>yo voy a ser quien sueñe mundos junto a vos…
 <br>
-<br><br>
 <br>
-<br><br><em>NOTA: 
-<br></em>Esta canción por lo general irá cargada de mucho rock, (sea lo que sea que signifique o implique para quien organice la muestra de estas obras) por ello está ubicada al final.
+<br><br><font size="3">NOTA: 
+<br>Esta canción por lo general irá cargada de mucho rock, (sea lo que sea que signifique o implique para quien organice la muestra de estas obras) por ello está ubicada al final.
 <br>Su rítmica y espíritu están basados en los de la canción “I’m gonna be (500 miles)” del grupo The Proclaimers (es una traducción libre).
-<br>Tener en cuenta que al cantarla, sí o sí, se debe movilizar al público a realizar los pasos coreográficos, si no, pierde el sentido.&nbsp;<br></p>
-            </div>
-        </div>
-    </div>
-</section>  
+<br>Tener en cuenta que al cantarla, sí o sí, se debe movilizar al público a realizar los pasos coreográficos, si no, pierde el sentido.&nbsp;<br></font>
+	</p>
 
-<section data-bs-version="5.1" class="article12 cid-uIuR8djrK9" id="article12-q">    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 mt-0 display-5"><strong>Acertijo-Poema</strong></h3>
-<div align="center">
-<audio controlsList="nodownload" controls="controls"> <source src="assets/audio/.mp3" type="audio/mpeg" /> </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font>
-</audio></div>                
-                <p class="mbr-text mbr-fonts-style display-7"><br>Un acertijo es una prueba.
+  </section>
+  
+  <section class="text-block" >
+    <h2>Acertijo-Poema</h2>
+    <div align="center"><audio class="player" controls onplay="activarAudio(this)">
+      <source src="audio/.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>&nbsp;&nbsp;&nbsp;<font color="blue" size="3">[En breve disponible]</font></div>
+    <p>
+<br>Un acertijo es una prueba.
 <br>Una palabra y de las buenas.
 <br>En una foto se recomienda;
 <br>que venga de adentro, que sea sincera.
@@ -871,12 +822,39 @@
 <br>
 <br>
 <br>
-<br><div align="center">***</div>
+<br><div align="center">***</div>	
+
+<div align="center"><a href="#palabras"><img src="ils/up.png" height="80"></a></div><br><br>
 
 </p>
-            </div>
-        </div>
-    </div>
-</section>  
+
+  </section>
+
+</div>
+
+<script>
+// Activar borde cuando se reproduce audio
+function activarAudio(audio) {
+  const section = audio.closest('section');
+  section.style.borderColor = '#FFD700';
+  setTimeout(()=>{ section.style.borderColor='transparent'; },3000);
+}
+
+// Menú: marcar sección activa
+const menuLinks = document.querySelectorAll('header nav a');
+const blocks = document.querySelectorAll('section.text-block');
+window.addEventListener('scroll', () => {
+  let current = '';
+  blocks.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    if(pageYOffset >= sectionTop) current = section.getAttribute('id');
+  });
+  menuLinks.forEach(a => {
+    a.classList.remove('active');
+    if(a.getAttribute('href') === '#'+current) a.classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
