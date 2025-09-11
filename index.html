@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-<title>Mi Recreo de Cuentos y canciones (Ricardo Contard)</title>
+<title>Mi Recreo</title>
 <meta charset="utf-8">
-<meta name="author" content="Ricardo Contard">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-title" content="Mi Recreo" />
 <meta name="generator" content="VisualNEO Web (19.9.16)" />
-<meta name="date" content="2025-09-10 06:46" />
+<meta name="date" content="2025-09-10 21:16" />
 <meta name="copyright" content="Copyright 2025 Ricardo Contard" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="css/nzAnimate.min.css">
 <link rel="stylesheet" href="css/neoapp-ui.min.css">
 <link rel="stylesheet" href="fuentes.css">
-<link rel="stylesheet" href="css/style.css">
 <meta name="description" content="Canciones infantiles, cuentos y videos educativos para niños. Escucha audios divertidos y descubre historias con música.">
 <meta name="keywords" content="mi recreo - recreo - canciones - cuentos - canciones infantiles - Ricardo Contard - ricardo contard - audios - videos - canciones para la escuela">
 <meta property="og:title" content="Canciones Infantiles y Cuentos para Niños">
@@ -26,6 +24,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mirecreo.com.ar/">
 <link rel="icon" href="img/timbre.png" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body id="ng-app" ng-app="NeoApp" ng-cloak>
 <div ng-controller="NeoApp_CoreCtrl" ng-view ng-cloak id="ng-view" class="app-viewport[NAB._pageEffect]"></div>
@@ -41,7 +40,7 @@
 <div id="Portada">
 <div id="Pie" class="[NAB.Pie_effect]" ng-style="NAB.Pie_style" ng-hide="NAB.Pie_hidden" ng-disabled="NAB.Pie_disabled"><div align="center">© 2025 . <a href="https://iosoft2022.github.io" target="_blank">IoSoft Producciones</a></div>
 </div>
-<div id="cont_portada" class="[NAB.cont_portada_effect]" ng-style="NAB.cont_portada_style" ng-hide="NAB.cont_portada_hidden" ng-disabled="NAB.cont_portada_disabled"><div align="center"><br><h1>Mi Recreo</h1><br><h3>de cuentos y canciones</h3><br><img src="img/img1.png" height="300px"><br>
+<div id="cont_portada" class="[NAB.cont_portada_effect]" ng-style="NAB.cont_portada_style" ng-hide="NAB.cont_portada_hidden" ng-disabled="NAB.cont_portada_disabled"><div align="center"><br><h1>Mi Recreo</h1><br><h3>de cuentos y canciones</h3><br><img src="img/img1.png" height="200"><br>
 <div class="buttons">
 <a href="#!Leer"><img class="btn" src="img/BTN_LEER.png" height="90"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#!Autor"><img class="btn" src="img/BTN_AUTOR.png" height="90"></a><br>
 <a href="#!Introduccion"><img class="btn" src="img/BTN_INTRODUCCION.png" height="90"></a><br>
@@ -54,7 +53,7 @@
 <br><br><br>
 <div align="center" id="videos">
 
-<div class="video-container">
+<div id="RecreoEnAccion" class="video-container">
     <video autoplay muted controls>
       <source src="archivos/doctor.mp4" type="video/mp4">
       Tu navegador no soporta la reproducción de videos.
@@ -102,7 +101,7 @@
 &nbsp;&nbsp;&nbsp;<strong><font color="#000080">[object.Mensaje]</strong></font></div>
 <div align="right">([object.Nombre])&nbsp;&nbsp;&nbsp;<br>
 <i>[object.Marcatemporal]</i>&nbsp;&nbsp;&nbsp;</div>
-</span><br><br>
+<br><br></span><br>
 </div>
 </div>
 <div align="center">
@@ -125,13 +124,13 @@ Todos los derechos reservados<br>
 <div id="Leer">
 <iframe id="IFrameLeer" name="IFrameLeer" width="768px" height="1159px" frameborder="0" class="[NAB.IFrameLeer_effect]" ng-style="NAB.IFrameLeer_style" ng-hide="NAB.IFrameLeer_hidden" ng-disabled="NAB.IFrameLeer_disabled" ng-src="leer/leer.html"></iframe>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="45"></a><br></div>
-<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
+<h3 id="TituloMenu" class="[NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
 </div>
 </div>
 </script>
 <script type="text/ng-template" id="Autor">
 <div id="Autor">
-<div id="Cont_Autor" class="[NAB.Cont_Autor_effect]" ng-style="NAB.Cont_Autor_style" ng-hide="NAB.Cont_Autor_hidden" ng-disabled="NAB.Cont_Autor_disabled"><div align="center"><img class="img-grado" style="border-radius:30px;" src="img/autor.jpg" height="130">
+<div id="Cont_Autor" class="[NAB.Cont_Autor_effect]" ng-style="NAB.Cont_Autor_style" ng-hide="NAB.Cont_Autor_hidden" ng-disabled="NAB.Cont_Autor_disabled"><div align="center"><img class="img-grado" style="border-radius:30px;" src="img/autor.png" height="150">
 <hr>
 <p>
 <strong>Nombre: </strong>Ricardo Martín Contard<br><br>
@@ -157,7 +156,7 @@ Todos los derechos reservados<br>
 </div></div>
 </div>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="45"></a><br></div>
-<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
+<h3 id="TituloMenu" class="[NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
 </div>
 </div>
 </script>
@@ -176,13 +175,13 @@ puedan llegar a las escuelas, los salones de actos, las bibliotecas, y todo ambi
 "Cuentos y canciones para re-crear lo ya creado",<br>aprendiendo las canciones, interactuando, y coloreando las ilustraciones.
 <br></p><<hr>
 <h4>***<br>Desde aquí puedes imprmir y/o descargar un PDF<br>con las ilustraciones del libro, listas para colorear.<br><br>
-<br><a href="#!Coloreables" target="_blank"><img src="img/colorear.png" height="90"></a><br>
+<br><a href="#!Coloreables"><img src="img/colorear.png" height="90"></a><br>
 <br>***<br>Además, junto a los textos, encontrarás un reproductor para escuchar cada canción o cuento:<br><br><img src="img/reproductor.png" height="60">
 </h4>
 </div>
 </div>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="45"></a><br></div>
-<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
+<h3 id="TituloMenu" class="[NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
 </div>
 </div>
 </script>
@@ -190,7 +189,7 @@ puedan llegar a las escuelas, los salones de actos, las bibliotecas, y todo ambi
 <div id="Coloreables">
 <iframe id="IFrame1" name="IFrame1" width="768px" height="1159px" frameborder="0" class="[NAB.IFrame1_effect]" ng-style="NAB.IFrame1_style" ng-hide="NAB.IFrame1_hidden" ng-disabled="NAB.IFrame1_disabled" ng-src="archivos/ParaColorear.pdf"></iframe>
 <div id="MenuSup" class="[NAB.MenuSup_effect]" ng-style="NAB.MenuSup_style" ng-hide="NAB.MenuSup_hidden" ng-disabled="NAB.MenuSup_disabled"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp<a href="#!Portada"><img src="img/timbre.png" height="45"></a><br></div>
-<h3 id="TituloMenu" class="neo-top-center [NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
+<h3 id="TituloMenu" class="[NAB.TituloMenu_effect]" ng-style="NAB.TituloMenu_style" ng-hide="NAB.TituloMenu_hidden" ng-disabled="NAB.TituloMenu_disabled" ng-click="TituloMenu_click()">I n i c i o</h3>
 </div>
 </div>
 </script>
